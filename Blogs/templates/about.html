@@ -1,0 +1,142 @@
+{% extends "base.html" %} {% load static %}
+{% block title %}About{% endblock title %}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
+  rel="stylesheet"
+/>
+{% block body %}
+<style>
+  body {
+    background: #2c3333;
+  }
+  .container img {
+    padding-top: 100px;
+  }
+  .about-head {
+    font-family: "Bowlby One SC";
+    font-size: 60px;
+    margin-top: 49px;
+    color: white;
+    font-weight: 600;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .content-1,
+  .content-2,
+  .content-3,
+  .content-4,
+  .content-5,
+  .content-6 {
+    color: white;
+    padding-top: 41px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    height: 300px;
+    width: 110vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1cdbd2, #93edc7);
+    margin: 100px 0;
+    border-radius: 7px;
+  }
+  .content-1 p,
+  .content-2 p,
+  .content-3 p,
+  .content-4 p,
+  .content-5 p,
+  .content-6 p {
+    padding-top: 41px;
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+
+  .content-1 h2,
+  .content-2 h2,
+  .content-3 h2,
+  .content-4 h2,
+  .content-5 h2,
+  .content-6 h2 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 55px;
+    text-align: center;
+  }
+</style>
+
+
+<div class="container">
+  <img src="../static/images/about.png" alt="#" />
+  <h1 class="about-head">Let's know about it more!!</h1>
+  <div class="content-1" data-aos="zoom-in-up">
+    <h2>About Blogs</h2>
+    <p>
+      Welcome to Blogs, your culinary journey to savor the world's most
+      delectable dishes and explore the art of cooking. I'm Naman, a passionate
+      home cook and the creator behind this blog. With a lifelong love for food
+      and flavors, I've embarked on a mission to share my culinary adventures
+      with fellow food enthusiasts like you.
+    </p>
+  </div>
+  <div class="content-2" data-aos="zoom-in-down">
+    <h2>Our Mission</h2>
+    <p>
+      At Blogs, we believe that cooking is more than just a necessity; it's a
+      creative expression that brings people together. Our mission is to inspire
+      your kitchen endeavors, from mastering the basics to experimenting with
+      bold and innovative recipes. We're here to help you infuse global
+      influences into your everyday meals and celebrate the joy of cooking.
+    </p>
+  </div>
+  <div class="content-3" data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom">
+    <h2>Let's Connect</h2>
+    <p>
+      Join us in celebrating the fusion of flavors, cultures, and culinary
+      experiences. Don't hesitate to reach out with your questions, feedback, or
+      your own culinary tales. Connect with us on social media or drop us a line
+      at [example@gmail.com] – we'd love to hear from you!
+    </p>
+  </div>
+  <div class="content-4" data-aos="zoom-out-down">
+    <h2>Let's Connect</h2>
+    <p>
+      Join us in celebrating the fusion of flavors, cultures, and culinary
+      experiences. Don't hesitate to reach out with your questions, feedback, or
+      your own culinary tales. Connect with us on social media or drop us a line
+      at [example@gmail.com] – we'd love to hear from you!
+    </p>
+  </div>
+  <div class="content-5" data-aos="fade-right">
+    <h2>Let's Connect</h2>
+    <p>
+      Join us in celebrating the fusion of flavors, cultures, and culinary
+      experiences. Don't hesitate to reach out with your questions, feedback, or
+      your own culinary tales. Connect with us on social media or drop us a line
+      at [example@gmail.com] – we'd love to hear from you!
+    </p>
+  </div>
+  <div class="content-6" data-aos="fade-left">
+    <h2>Let's Connect</h2>
+    <p>
+      Join us in celebrating the fusion of flavors, cultures, and culinary
+      experiences. Don't hesitate to reach out with your questions, feedback, or
+      your own culinary tales. Connect with us on social media or drop us a line
+      at [example@gmail.com] – we'd love to hear from you!
+    </p>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+  duration: 1200,
+  offset: 300
+})
+</script>
+{% endblock body %}

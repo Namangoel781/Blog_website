@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block body %}
+<style>
+
+</style>
+<div class="card mb-3">
+  <img src="../static/images/content-1.jpg" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{viewBlog.title}}</h5>
+    <h6 class="class-warning">Author: {{viewBlog.auth_name}}</h6>
+    <p class="card-text">{{viewBlog.content}}</p>
+    <p>
+      <small class="text-body-secondary">Posted Date: {{viewBlog.date}}</small>
+    </p>
+  </div>
+</div>
+
+{% endblock body %}
